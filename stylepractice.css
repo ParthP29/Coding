@@ -1,0 +1,79 @@
+
+#wrapper, #wrapper2 {
+    display: grid;
+    grid-template-areas: "Logo Header Header nav"
+                         "Main Main Main Sidebar"
+                       "Footer Footer Footer Footer";
+    grid-template-columns: 1.7fr 9fr 5fr 1fr;
+    color: aliceblue;
+    background-color: darkred;
+}
+
+
+html {
+    width; 100vw;
+}
+
+#Scale1 {
+    height: 100px;
+    width: 100px;
+    transform:rotate(90deg)
+}
+#Logo {
+    width: 100px;
+    height:100px;
+    grid-area: Logo;
+    overflow: hidden;
+}
+
+
+
+#Nav, #Nav2 {
+    grid-area: nav;
+    background-color: darkred;
+    text-align: right;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    
+}
+#header, #header2{
+grid-area: Header;
+background-color: darkred;
+font-size: 20px;
+line-height: 35px;
+padding-left: 100px;
+align-items: center;
+}
+
+
+#main, #main2 {
+    grid-area: Main;
+    height: auto;
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    background-color: black;
+}
+
+img {
+    height: 400px;
+}
+ 
+#Sidebar, #Sidebar2 {
+    grid-area: Sidebar;
+    background-color: darkgrey;
+    padding: 36px;
+}
+
+a {
+    color: aliceblue;
+}
+#Footer, #Footer2 {
+    
+    grid-area: Footer;
+    background-color: darkred;
+    text-align: center;
+}
